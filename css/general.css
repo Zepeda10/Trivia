@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Glory:wght@300&family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    margin: 0 auto;
+    max-width: 80%;
+    height: 100%;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #cad1d6;
+}
+
+h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+body{
+    height: 100%;
+}
+
+.header{
+    text-align: center;
+    padding: 17px 0;
+    font-size: 20px;
+}
+
+.fondo{
+    height: auto !important;
+    min-height: 100%;
+    background-color: #f5f7f8;
+}
+
+.content{
+    padding: 0 16px;
+}
+
+#logo{
+    width: 60px;
+    position: absolute;
+    top: 14px;
+    left: 680px;
+}
+
+.no-celulares{
+    display: none;
+}
+
+@media screen and (max-width: 1500px) {
+    #logo{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .header{
+        text-align: center;
+        padding: 17px 0;
+        font-size: 16px;
+    }
+
+    h1{
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .content{
+        display: none;
+    }
+
+    .no-celulares{
+        padding: 0 16px;
+        display:inline-block;
+        text-align: center;
+    }
+
+    #cerrar-movil{
+      text-decoration: none;
+      color: #113662;
+      line-height: 60px;
+    }
+    
+  }
+  
+

@@ -1,0 +1,134 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+form {
+  border: 3px solid #f1f1f1;
+  width: 30%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #113662;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #6096ba;
+}
+
+.img-login {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+.avatar {
+  width: 100px;
+}
+
+.login {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+
+/* ---------- RESPONSIVE ---------- */
+
+@media screen and (max-width: 800px) {
+  form {
+    border: 3px solid #f1f1f1;
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  form {
+    border: 3px solid #f1f1f1;
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px 18px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  button {
+    background-color: #113662;
+    color: white;
+    padding: 12px 18px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  form {
+    border: 3px solid #f1f1f1;
+    width: 60%;
+    margin: 0 auto;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  form {
+    border: 2px solid #f1f1f1;
+    width: 65%;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  .avatar {
+    width: 80px;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 5px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  button {
+    background-color: #113662;
+    color: white;
+    padding: 7px 10px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+}

@@ -1,0 +1,38 @@
+span {
+  font-weight: bold;
+}
+
+
+.logos img {
+  width: 150px;
+  height: 150px;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+#img1:hover {
+    -webkit-transform:scale(0.8);transform:scale(0.8);
+    opacity: 0.8;
+}
+
+#img2:hover {
+    -webkit-transform:scale(0.8);transform:scale(0.8);
+    opacity: 0.8;
+}
+
+#img3:hover {
+    -webkit-transform:scale(0.8);transform:scale(0.8);
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 800px) {
+  .logos img {
+    width: 130px;
+    height: 130px;
+  }
+}
+

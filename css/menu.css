@@ -1,0 +1,138 @@
+/* menu */
+
+.menu {
+  text-align: center;
+  width: 100%;
+  padding-left: 16px;
+  margin: 0;
+  height: 40px;
+  margin-bottom: 30px;
+}
+.menu ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0;
+  height: 40px;
+}
+
+/* items del menu */
+
+.menu ul li {
+  background-color: #113662;
+  display: inline-block;
+}
+
+/* enlaces del menu */
+
+.menu ul a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 0px 83px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  height: 40px;
+  line-height: 40px;
+}
+
+/* items del menu */
+
+.menu ul li {
+  position: relative;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+/* efecto al pasar el ratón por los items del menu */
+
+.menu ul li:hover {
+  background: #6096ba;
+}
+
+.menu ul li:hover > a {
+  color: #e7ecee;
+}
+
+.menu ul li:hover > ul {
+  display: block;
+}
+
+/* menu desplegable */
+
+.menu ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding: 0;
+}
+
+/* items del menu desplegable */
+
+.menu ul ul li {
+  float: none;
+  width: 259px;
+}
+
+/* enlaces de los items del menu desplegable */
+
+.menu ul ul a {
+  padding: 0 15px;
+}
+
+/* items del menu desplegable al pasar el ratón */
+
+.menu ul li:hover > ul {
+  display: block;
+}
+
+.here {
+  background: #6096ba;
+}
+
+@media screen and (max-width: 1500px) {
+
+  .menu ul a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 0px 75px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    height: 40px;
+    line-height: 40px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .menu {
+    text-align: center;
+    width: 100%;
+    padding-left: 18px;
+    margin: 0;
+    height: 40px;
+    margin-bottom: 30px;
+  }
+  .menu ul a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 0px 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    height: 40px;
+    line-height: 40px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .menu {
+    display: none;
+  }
+}
+
+

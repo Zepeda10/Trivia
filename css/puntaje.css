@@ -1,0 +1,50 @@
+#grid {
+  margin-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#grid td,
+#grid th {
+  border: 1px solid #cad1d6;
+  padding: 8px;
+}
+
+#grid tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#grid tr:hover {
+  background-color: #cad1d6;
+}
+
+#grid th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #6096ba;
+  color: white;
+}
+
+.img-eliminar {
+  width: 18px;
+}
+
+button {
+  border: none;
+  padding: 3px 10px;
+  display: block;
+  margin: auto;
+}
+
+button:hover{
+    background-color: brown;
+}
+
+@media screen and (max-width: 800px) {
+  #grid{
+    font-size: 12px;
+  }
+}
+

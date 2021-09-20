@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trivia | Inicio</title>
+    <link rel="icon" type="image/png" href="img/question.ico" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/acercade.css" />
+  </head>
+  <body>
+    <div class="fondo">
+      <div class="header">
+        <img id="logo" src="img/question.png" alt="">
+        <h2>TRIVIA</h2>
+      </div>
+
+      <nav class="menu">
+        <ul>
+          <li><a href="inicio.html">Inicio</a></li>
+          <li>
+            <a href="#">Categorías</a>
+            <!-- start menu desplegable -->
+            <ul>
+              <li><a href="musica.html">Música</a></li>
+              <li><a href="videojuegos.html">Videojuegos</a></li>
+              <li><a href="tecnologia.html">Tecnología</a></li>
+            </ul>
+            <!-- end menu desplegable -->
+          </li>
+          <li><a href="puntajes.html">Puntajes</a></li>
+          <li><a href="acercade.html" class="here">Acerca de</a></li>
+          <li><a href="#" onclick="cerrar()">Cerrar sesión</a></li>
+        </ul>
+        <!-- end menu -->
+      </nav>
+
+      <div class="content">
+        <h2>Sobre el sitio</h2>
+        <p>
+          Este sitio fue desarrollado usando las tecnologías de:
+          <span>HTML5, CSS3 y JavaScript.</span>
+        </p>
+
+        <div class="logos">
+          <img src="img/html.png" alt="" id="img1" />
+          <img src="img/css.png" alt="" id="img2" />
+          <img src="img/js.png" alt="" id="img3" />
+        </div>
+      </div>
+
+      <div class="footer"></div>
+    </div>
+    <script src="js/login.js"></script>
+  </body>
+</html>

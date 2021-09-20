@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trivia | Puntos</title>
+    <link rel="icon" type="image/png" href="img/question.ico">
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/puntaje.css" />   
+  </head>
+
+  <style>
+      .btn-eliminar{
+          background-color: red;
+          color: white;
+      }
+  </style>
+
+  <body>
+    <div class="fondo">
+    <!-- inicio header -->
+    <div class="header">
+      <img id="logo" src="img/question.png" alt="">
+      <h2>TRIVIA</h2>
+    </div>
+    <!-- fin header -->
+
+    <!-- inicio menu -->
+    <nav class="menu">
+      <ul>
+        <li><a href="inicio.html">Inicio</a></li>
+        <li>
+          <a href="#">Categorías</a>
+          <!-- inicio desplegable -->
+          <ul>
+            <li><a href="musica.html">Música</a></li>
+            <li><a href="videojuegos.html">Videojuegos</a></li>
+            <li><a href="tecnologia.html">Tecnología</a></li>
+          </ul>
+          <!-- fin menu desplegable -->
+        </li>
+        <li><a href="puntajes.html" class="here">Puntajes</a></li>
+        <li><a href="acercade.html">Acerca de</a></li>
+        <li><a href="#" onclick="cerrar()">Cerrar sesión</a></li>
+      </ul>
+    </nav>
+    <!-- fin menu -->
+
+    <!-- contenido -->
+    <div class="content">
+        <h1>Tabla de puntos</h1>
+
+        <table id="grid" class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Puntaje</th>
+                    <th>Categoría</th>
+                    <th>Tiempo</th>
+                    <th>Fecha</th>
+                    <th>Eliminar</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    <!-- fin contenido -->
+
+    <div class="footer"></div>
+
+    <!-- zona de scripts -->
+    <script src="js/login.js"></script>
+    <script src="js/tabla-puntos.js"></script>
+  </div>
+  </body>
+</html>

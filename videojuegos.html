@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trivia | Videojuegos</title>
+    <link rel="icon" type="image/png" href="img/question.ico">
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/modal.css" />
+    <link rel="stylesheet" href="css/quiz.css" />
+  </head>
+  <body>
+    <div class="fondo">
+      <!-- inicio header -->
+      <div class="header">
+        <img id="logo" src="img/question.png" alt="">
+        <h2>TRIVIA</h2>
+      </div>
+      <!-- fin header -->
+
+      <!-- inicio menu -->
+      <nav class="menu">
+        <ul>
+          <li><a href="inicio.html">Inicio</a></li>
+          <li>
+            <a href="#">Categorías</a>
+            <!-- inicio desplegable -->
+            <ul>
+              <li><a href="musica.html">Música</a></li>
+              <li><a href="videojuegos.html" class="here">Videojuegos</a></li>
+              <li><a href="tecnologia.html">Tecnología</a></li>
+            </ul>
+            <!-- fin menu desplegable -->
+          </li>
+          <li><a href="puntajes.html">Puntajes</a></li>
+          <li><a href="acercade.html">Acerca de</a></li>
+          <li><a href="#" onclick="cerrar()">Cerrar sesión</a></li>
+        </ul>
+      </nav>
+      <!-- fin menu -->
+
+      <!-- contenido -->
+      <div class="content">
+        <h1>Categoría: Videojuegos</h1>
+        <p id="contador-container"></p>
+
+        <div class="quiz-container">
+          <div id="quiz"></div>
+        </div>
+        <button id="anterior">Anterior</button>
+        <button id="siguiente">Siguiente</button>
+        <button id="enviar">Enviar</button>
+        <div id="resultado"></div>
+      </div>
+      <!-- fin contenido -->
+    </div>
+
+    <!-- inicio modal -->
+    <div class="contenido-modal">
+      <div class="modal" id="modal1" data-animation="slideInOutLeft">
+        <div class="modal-dialog">
+          <header class="modal-header" style="font-weight: bold; font-size: 18px;">¿Desea iniciar la trivia?</header>
+          <section class="modal-content">
+            <p>
+              El conteo empezará al dar clic en 'aceptar'. Los datos de la
+              trivia se almacenarán en el localStorage de su navegador.
+            </p>
+            <p>¡Mucha suerte!</p>
+
+            <button id="iniciaConteo" onclick="cerrarModal()" style="margin-top: 10px;">Iniciar</button>
+            <button id="cancelar" onclick="cancelar()">Cancelar</button>
+          </section>
+          <footer class="modal-footer"></footer>
+        </div>
+      </div>
+    </div>
+    <!-- fin modal -->
+
+    <div class="footer"></div>
+
+    <!-- zona de scripts -->
+    <script src="js/login.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/quiz-videojuegos.js"></script>
+  </body>
+</html>
